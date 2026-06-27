@@ -1,0 +1,42 @@
+[
+  {
+    "id": "item1",
+    "title": "Kartu Keluarga (KK)",
+    "description": "Fotokopi KK terbaru yang dilegalisir kelurahan."
+  },
+  {
+    "id": "item2",
+    "title": "SKTM (Surat Keterangan Tidak Mampu)",
+    "description": "Surat resmi dari desa/kelurahan setempat."
+  },
+  {
+    "id": "item3",
+    "title": "Rapor SMA/Sederajat",
+    "description": "Fotokopi rapor semester 1 - 5 yang dilegalisir sekolah."
+  },
+  {
+    "id": "item4",
+    "title": "Ijazah / SKL",
+    "description": "Ijazah asli atau Surat Keterangan Lulus (jika belum keluar)."
+  },
+  {
+    "id": "item5",
+    "title": "Surat Rekomendasi",
+    "description": "Rekomendasi dari Kepala Sekolah untuk pengajuan beasiswa."
+  },
+  {
+    "id": "item6",
+    "title": "Pas Foto Terbaru",
+    "description": "Pas foto formal berwarna (ukuran 3x4 dan 4x6)."
+  },
+  {
+    "id": "item7",
+    "title": "Foto Rumah",
+    "description": "Foto tampak depan, ruang tamu, dan dapur tangga (syarat KIP-K)."
+  },
+  {
+    "id": "item8",
+    "title": "Rekening Listrik / PBB",
+    "description": "Bukti pembayaran listrik bulan terakhir atau PBB rumah."
+  }
+]

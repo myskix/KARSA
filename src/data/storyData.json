@@ -1,0 +1,105 @@
+{
+  "initialState": {
+    "uang": 50000,
+    "motivasi": 30
+  },
+  "startNode": "start",
+  "nodes": {
+    "start": {
+      "id": "start",
+      "narasi": "Kamu adalah siswa kelas 3 SMA di Desa Kepau Baru. Lulus sekolah tinggal menghitung bulan. Pagi ini, ayahmu mengajak pergi ke laut untuk membantu mencari ikan. Di sisi lain, ada jadwal bimbingan beasiswa KIP-Kuliah dengan gurumu di sekolah. Uang tabunganmu saat ini Rp 50.000.",
+      "pilihan": [
+        {
+          "text": "Ikut ayah melaut (Mendapat upah Rp 40.000)",
+          "nextNode": "melaut",
+          "uang": 40000,
+          "motivasi": -10
+        },
+        {
+          "text": "Pergi ke sekolah untuk bimbingan beasiswa",
+          "nextNode": "sekolah",
+          "uang": -10000,
+          "motivasi": 20
+        }
+      ]
+    },
+    "melaut": {
+      "id": "melaut",
+      "narasi": "Keringat bercucuran, tapi hasil tangkapan cukup lumayan. Kamu mendapat upah harian. Namun, punggungmu terasa sakit dan kamu teringat teman-temanmu yang sedang belajar di kelas mempersiapkan masa depan.",
+      "pilihan": [
+        {
+          "text": "Terima kenyataan, ini adalah nasibku",
+          "nextNode": "akhir_nelayan",
+          "uang": 0,
+          "motivasi": -20
+        },
+        {
+          "text": "Sisihkan uang untuk beli kuota belajar besok",
+          "nextNode": "beli_kuota",
+          "uang": -20000,
+          "motivasi": 15
+        }
+      ]
+    },
+    "sekolah": {
+      "id": "sekolah",
+      "narasi": "Guru Bk menyambutmu dengan hangat. Beliau menjelaskan bahwa ada jalur beasiswa penuh untuk anak daerah 3T (ADik dan KIP-K). Biaya kuliah dan biaya hidup akan ditanggung negara jika kamu lulus seleksi.",
+      "pilihan": [
+        {
+          "text": "Ragu, aku takut gagal dan mengecewakan keluarga",
+          "nextNode": "ragu_ragu",
+          "uang": 0,
+          "motivasi": -5
+        },
+        {
+          "text": "Bertekad bulat untuk mendaftar dan belajar keras",
+          "nextNode": "akhir_kuliah",
+          "uang": 0,
+          "motivasi": 30
+        }
+      ]
+    },
+    "beli_kuota": {
+      "id": "beli_kuota",
+      "narasi": "Malam harinya, dengan tubuh lelah kamu menyalakan HP dan mencari informasi soal pendaftaran kuliah. Ada banyak kisah sukses anak nelayan yang berhasil menjadi sarjana.",
+      "pilihan": [
+        {
+          "text": "Besok temui guru BK untuk mendaftar",
+          "nextNode": "akhir_kuliah",
+          "uang": 0,
+          "motivasi": 25
+        }
+      ]
+    },
+    "ragu_ragu": {
+      "id": "ragu_ragu",
+      "narasi": "Gurumu memberikan brosur beasiswa dan menepuk pundakmu. \"Kesempatan tidak datang dua kali, pikirkan baik-baik,\" katanya.",
+      "pilihan": [
+        {
+          "text": "Coba daftar saja, tidak ada salahnya berjuang",
+          "nextNode": "akhir_kuliah",
+          "uang": 0,
+          "motivasi": 15
+        },
+        {
+          "text": "Sudahlah, aku bantu ayah saja di laut",
+          "nextNode": "akhir_nelayan",
+          "uang": 0,
+          "motivasi": -10
+        }
+      ]
+    },
+    "akhir_kuliah": {
+      "id": "akhir_kuliah",
+      "isEnd": true,
+      "narasi": "Kamu memilih untuk memperjuangkan pendidikanmu. Jalannya tidak akan mudah, tapi dengan beasiswa KIP-Kuliah, masa depan cerah kini ada dalam genggamanmu.",
+      "kesimpulan": "Pendidikan adalah kunci memutus rantai kemiskinan. Jangan biarkan keterbatasan ekonomi menghalangi impianmu untuk kuliah!"
+    },
+    "akhir_nelayan": {
+      "id": "akhir_nelayan",
+      "isEnd": true,
+      "narasi": "Kamu memilih untuk tidak melanjutkan pendidikan dan fokus menjadi nelayan. Hidup memang sebuah pilihan, tapi kamu akan selalu bertanya-tanya 'bagaimana jika' kamu dulu mencoba mendaftar kuliah.",
+      "kesimpulan": "Menjadi nelayan adalah pekerjaan mulia, namun pendidikan tinggi dapat membuka lebih banyak pintu peluang dan meningkatkan taraf hidup keluargamu di masa depan."
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "questions": [
+    {
+      "id": "nilai",
+      "label": "Rata-rata Nilai Rapor (Dominan)",
+      "type": "select",
+      "options": [
+        { "value": "saintek", "label": "Tinggi di Matematika & IPA" },
+        { "value": "soshum", "label": "Tinggi di IPS & Bahasa" },
+        { "value": "seimbang", "label": "Cenderung Seimbang" }
+      ]
+    },
+    {
+      "id": "minat",
+      "label": "Apa minat utamamu?",
+      "type": "radio",
+      "options": [
+        { "value": "teknologi", "label": "Teknologi & Komputer" },
+        { "value": "sosial", "label": "Berinteraksi & Membantu Orang Lain" },
+        { "value": "seni", "label": "Kesenian & Desain Kreatif" },
+        { "value": "bisnis", "label": "Berdagang & Manajemen Keuangan" }
+      ]
+    },
+    {
+      "id": "bidang",
+      "label": "Bidang favorit di sekolah?",
+      "type": "radio",
+      "options": [
+        { "value": "logika", "label": "Eksakta / Logika Murni" },
+        { "value": "hafalan", "label": "Hafalan / Teori" },
+        { "value": "praktek", "label": "Praktikum Lapangan" }
+      ]
+    },
+    {
+      "id": "aktivitas",
+      "label": "Aktivitas luang favorit?",
+      "type": "radio",
+      "options": [
+        { "value": "analisis", "label": "Membaca & Menganalisis masalah" },
+        { "value": "komunikasi", "label": "Mengobrol & Organisasi" },
+        { "value": "karya", "label": "Membuat karya seni / prakarya" }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "condition": { "minat": "teknologi", "bidang": "logika" },
+      "result": {
+        "jurusan": "Teknik Informatika / Ilmu Komputer",
+        "skor": 95,
+        "alasan": "Kombinasi minat kuat pada teknologi dan kemampuan logika eksakta sangat cocok untuk menjadi Software Engineer atau Data Analyst.",
+        "beasiswa": "Beasiswa Unggulan Kemdikbud / KIP Kuliah"
+      }
+    },
+    {
+      "condition": { "minat": "sosial", "aktivitas": "komunikasi" },
+      "result": {
+        "jurusan": "Ilmu Komunikasi / Kesejahteraan Sosial",
+        "skor": 92,
+        "alasan": "Kamu sangat menikmati interaksi dengan manusia. Jurusan ini akan mengasah potensimu menjadi negosiator atau pekerja sosial andal.",
+        "beasiswa": "Beasiswa ADik (Afirmasi Daerah 3T)"
+      }
+    },
+    {
+      "condition": { "minat": "seni", "aktivitas": "karya" },
+      "result": {
+        "jurusan": "Desain Komunikasi Visual (DKV)",
+        "skor": 88,
+        "alasan": "Imajinasi dan kreativitasmu sangat tinggi. Bidang industri kreatif saat ini sangat membutuhkan talent dengan portofolio karyamu.",
+        "beasiswa": "KIP Kuliah Merdeka"
+      }
+    },
+    {
+      "condition": { "minat": "bisnis", "nilai": "soshum" },
+      "result": {
+        "jurusan": "Manajemen Bisnis / Akuntansi",
+        "skor": 90,
+        "alasan": "Pemahaman teori sosial dipadu dengan ketertarikan pada bisnis adalah fondasi kuat untuk menjadi entrepreneur muda.",
+        "beasiswa": "Beasiswa Bakti BCA / KIP Kuliah"
+      }
+    }
+  ],
+  "defaultResult": {
+    "jurusan": "Administrasi Publik / Pendidikan",
+    "skor": 80,
+    "alasan": "Profilmu sangat seimbang dan fleksibel. Jurusan umum ini memungkinkanmu berkembang ke berbagai arah karir di masa depan.",
+    "beasiswa": "KIP Kuliah Reguler"
+  }
+}
