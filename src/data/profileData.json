@@ -1,0 +1,36 @@
+{
+  "user": {
+    "name": "Budi",
+    "school": "SMA Terbuka Desa Kepau Baru",
+    "class": "Kelas XII",
+    "location": "Desa Kepau Baru, Kepulauan Meranti, Riau",
+    "avatarText": "B"
+  },
+  "appInfo": {
+    "version": "1.0.0 (MVP)",
+    "cacheSize": "1.2 MB",
+    "lastUpdated": "28 Juni 2026"
+  },
+  "activityLog": [
+    {
+      "date": "28 Juni 2026",
+      "time": "15:45",
+      "activity": "Menyelesaikan Life Simulation: Pilihan Sulit di Laut"
+    },
+    {
+      "date": "28 Juni 2026",
+      "time": "14:20",
+      "activity": "Mengisi Assessment Potensi Diri"
+    },
+    {
+      "date": "27 Juni 2026",
+      "time": "10:15",
+      "activity": "Melengkapi Berkas: Kartu Keluarga (KK)"
+    },
+    {
+      "date": "27 Juni 2026",
+      "time": "09:00",
+      "activity": "Membuka Aplikasi KARSA Pertama Kali"
+    }
+  ]
+}

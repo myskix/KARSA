@@ -10,6 +10,8 @@ import { Simulasi } from './pages/Simulasi.js'
 import { Potensi } from './pages/Potensi.js'
 import { Peta } from './pages/Peta.js'
 import { Tentang } from './pages/Tentang.js'
+import { Profil } from './pages/Profil.js'
+import { Bagikan } from './pages/Bagikan.js'
 
 // Register all routes
 registerRoute('splash', Splash)
@@ -18,6 +20,8 @@ registerRoute('jejak', Simulasi)
 registerRoute('potensi', Potensi)
 registerRoute('peta', Peta)
 registerRoute('tentang', Tentang)
+registerRoute('profil', Profil)
+registerRoute('bagikan', Bagikan)
 
 // Initial render with an empty layout shell
 const appContainer = document.querySelector('#app');

@@ -13,7 +13,7 @@ export const Header = ({ title = 'KARSA', showBack = false } = {}) => {
     : `<div class="w-10"></div>`; // spacer to keep title centered
 
   return `
-    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-100 px-5 py-4 flex items-center justify-between shadow-sm">
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-100 px-5 pt-[calc(env(safe-area-inset-top,0px)+1rem)] pb-4 flex items-center justify-between shadow-sm">
       ${backButton}
       <h1 class="text-lg font-bold text-slate-900 tracking-tight">${title}</h1>
       <div class="w-10 flex justify-end">

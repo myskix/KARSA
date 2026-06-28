@@ -28,10 +28,10 @@
 }
 
 body {
-  @apply bg-slate-900 text-slate-900 antialiased; /* Use dark background outside the mobile container */
+  @apply bg-slate-950 text-slate-900 antialiased;
 }
 
-/* Ensure #app takes full height */
+/* Ensure #app centers the mobile container on desktop screens */
 #app {
-  @apply min-h-screen w-full;
+  @apply min-h-screen w-full flex items-center justify-center p-0 sm:p-4;
 }

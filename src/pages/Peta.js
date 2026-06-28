@@ -103,7 +103,7 @@ document.addEventListener('pageLoaded', (e) => {
 
 export const Peta = async () => {
   return `
-    ${Header({ title: 'Peta Langkah', showBack: true })}
+    ${Header({ title: 'Peta Langkah', showBack: false })}
     
     <main class="p-5 pb-24 min-h-screen bg-slate-50">
       <div id="peta-container" class="animate-fade-in-up">

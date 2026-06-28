@@ -55,26 +55,22 @@ export const Home = async () => {
           <p class="text-slate-500 text-sm font-medium mb-1">Halo, ${user.name}!</p>
           <h2 class="text-2xl font-bold text-slate-900">Mari Siapkan Masa Depanmu 🚀</h2>
         </div>
-        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-lg border-2 border-white shadow-sm">
+        <div onclick="window.location.hash='profil'" class="w-12 h-12 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-lg border-2 border-white shadow-sm cursor-pointer hover:scale-105 active:scale-95 transition-all">
           ${user.name.charAt(0)}
         </div>
       </section>
 
-      <!-- App Progress Card -->
+      <!-- Progress Persiapan Kuliah -->
       ${Card({
-        classNames: 'bg-gradient-to-br from-slate-800 to-slate-900 text-white border-0 overflow-hidden relative',
-        padding: 'p-6',
+        classNames: 'border border-slate-100 shadow-sm bg-white',
+        padding: 'p-4',
         children: `
-          <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-10 -mt-10 blur-2xl"></div>
-          <div class="relative z-10">
-            <div class="flex justify-between items-center mb-2">
-              <h3 class="font-bold text-lg text-white">Level: ${progress.label}</h3>
-              <span class="text-sm font-bold bg-white/20 px-2 py-1 rounded text-white">${progress.percentage}%</span>
-            </div>
-            <div class="w-full bg-slate-700 rounded-full h-2.5 mb-3">
-              <div class="bg-karsa-accent h-2.5 rounded-full" style="width: ${progress.percentage}%"></div>
-            </div>
-            <p class="text-slate-300 text-xs">${progress.description}</p>
+          <div class="flex justify-between items-center mb-1.5">
+            <span class="text-xs font-bold text-slate-500 tracking-wider">PROGRES PERSIAPAN KULIAH</span>
+            <span class="text-xs font-bold text-karsa-primary">${progress.percentage}%</span>
+          </div>
+          <div class="w-full bg-slate-100 rounded-full h-2">
+            <div class="bg-karsa-primary h-2 rounded-full transition-all duration-500" style="width: ${progress.percentage}%"></div>
           </div>
         `
       })}

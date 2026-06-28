@@ -67,6 +67,16 @@ const renderStory = () => {
   if (statusMotivasi) statusMotivasi.innerText = `${state.motivasi}%`;
 
   if (node.isEnd) {
+    // Record completion in local storage
+    const completedSimulations = parseInt(localStorage.getItem('karsa_simulations_completed') || '0') + 1;
+    localStorage.setItem('karsa_simulations_completed', completedSimulations.toString());
+    localStorage.setItem('karsa_last_simulation_result', JSON.stringify({
+      uang: state.uang,
+      motivasi: state.motivasi,
+      kesimpulan: node.kesimpulan,
+      completedAt: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+    }));
+
     // Render End Screen
     contentDiv.innerHTML = `
       <div class="text-center py-8 animate-fade-in-up">
@@ -143,7 +153,7 @@ document.addEventListener('pageLoaded', (e) => {
 
 export const Simulasi = async () => {
   return `
-    ${Header({ title: 'Life Simulation', showBack: true })}
+    ${Header({ title: 'Life Simulation', showBack: false })}
     
     <!-- Status Bar -->
     <div class="sticky top-[60px] z-30 bg-white/90 backdrop-blur border-b border-slate-100 px-5 py-3 flex justify-between shadow-sm text-sm font-bold">

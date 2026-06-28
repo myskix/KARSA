@@ -11,7 +11,7 @@ export const Splash = async () => {
   }, 2500);
 
   return `
-    <div class="h-screen w-full flex flex-col items-center justify-center bg-karsa-primary text-white">
+    <div class="absolute inset-0 z-50 flex flex-col items-center justify-center bg-karsa-primary text-white">
       <div class="animate-bounce">
         <div class="w-24 h-24 bg-white text-karsa-primary rounded-full flex items-center justify-center text-4xl font-black shadow-2xl mb-6 mx-auto">
           K

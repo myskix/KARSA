@@ -104,6 +104,17 @@ window.submitPotensi = () => {
       }
     }
 
+    // Save result to localStorage for Profile page integration
+    const assessmentCount = parseInt(localStorage.getItem('karsa_assessment_count') || '0') + 1;
+    localStorage.setItem('karsa_assessment_count', assessmentCount.toString());
+    localStorage.setItem('karsa_potensi_result', JSON.stringify({
+      jurusan: finalResult.jurusan,
+      skor: finalResult.skor,
+      alasan: finalResult.alasan,
+      beasiswa: finalResult.beasiswa,
+      completedAt: new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })
+    }));
+
     renderResult(finalResult);
     container.classList.remove('opacity-0', 'scale-95');
   }, 600);
@@ -181,7 +192,7 @@ document.addEventListener('pageLoaded', (e) => {
 
 export const Potensi = async () => {
   return `
-    ${Header({ title: 'Menu Potensi', showBack: true })}
+    ${Header({ title: 'Menu Potensi', showBack: false })}
     
     <main class="p-5 pb-24">
       <div id="potensi-container" class="transition-all duration-300 transform min-h-[400px]">
