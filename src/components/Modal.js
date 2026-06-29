@@ -5,12 +5,12 @@
 
 export const Modal = ({ id, title, content, confirmText = 'Tutup' }) => {
   return `
-    <div id="${id}" class="fixed inset-0 z-[100] hidden flex-col items-center justify-end sm:justify-center p-4">
+    <div id="${id}" class="fixed inset-0 z-[100] hidden flex-col items-center justify-end p-4">
       <!-- Backdrop -->
       <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm transition-opacity opacity-0" id="${id}-backdrop" onclick="closeModal('${id}')"></div>
       
       <!-- Modal Panel -->
-      <div class="bg-white rounded-t-3xl sm:rounded-3xl w-full max-w-md p-6 relative z-10 transform translate-y-full transition-transform duration-300 ease-out shadow-2xl" id="${id}-panel">
+      <div class="bg-white rounded-t-3xl w-full max-w-[480px] p-6 relative z-10 transform translate-y-full transition-transform duration-300 ease-out shadow-2xl" id="${id}-panel">
         <div class="w-12 h-1.5 bg-slate-200 rounded-full mx-auto mb-6 sm:hidden"></div>
         <h3 class="text-xl font-bold text-slate-900 mb-4">${title}</h3>
         <div class="text-slate-600 mb-8 max-h-[60vh] overflow-y-auto">

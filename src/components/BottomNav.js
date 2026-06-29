@@ -27,8 +27,13 @@ export const BottomNav = (activeTab = 'home') => {
   };
 
   return `
-    <nav class="fixed bottom-0 w-full max-w-md bg-white/90 backdrop-blur-lg border-t border-slate-100 flex justify-around items-end pb-safe shadow-[0_-4px_20px_-10px_rgba(0,0,0,0.1)] z-50">
-      ${tabs.map(renderTab).join('')}
-    </nav>
+    <div class="sticky bottom-0 w-full z-50 pointer-events-none mt-auto">
+      <nav 
+        class="w-full bg-white/90 backdrop-blur-lg border-t border-slate-100 flex justify-around items-end shadow-[0_-4px_20px_-10px_rgba(0,0,0,0.1)] pointer-events-auto rounded-t-2xl"
+        style="padding-bottom: env(safe-area-inset-bottom, 0px);"
+      >
+        ${tabs.map(renderTab).join('')}
+      </nav>
+    </div>
   `;
 };

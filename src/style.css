@@ -28,10 +28,10 @@
 }
 
 body {
-  @apply bg-slate-950 text-slate-900 antialiased;
+  @apply bg-white text-slate-900 antialiased font-sans min-h-screen flex justify-center items-start;
 }
 
-/* Ensure #app centers the mobile container on desktop screens */
+/* Ensure #app fits the layout nicely */
 #app {
-  @apply min-h-screen w-full flex items-center justify-center p-0 sm:p-4;
+  @apply w-full max-w-[480px] bg-white min-h-screen flex flex-col relative sm:border-x sm:border-slate-100 sm:shadow-2xl;
 }
