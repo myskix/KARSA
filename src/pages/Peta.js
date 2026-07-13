@@ -62,9 +62,9 @@ const renderPeta = () => {
   container.innerHTML = `
     <!-- Progress Header -->
     ${Card({
-      classNames: 'bg-white shadow-sm border border-slate-100 mb-6',
-      padding: 'p-5',
-      children: `
+    classNames: 'bg-white shadow-sm border border-slate-100 mb-6',
+    padding: 'p-5',
+    children: `
         <div class="flex justify-between items-start mb-3">
           <div>
             <h2 class="font-bold text-slate-800 text-lg">Persiapan Berkas</h2>
@@ -84,7 +84,15 @@ const renderPeta = () => {
           <div class="bg-karsa-primary h-3 rounded-full transition-all duration-500 ease-out" style="width: ${percentage}%"></div>
         </div>
       `
-    })}
+  })}
+
+    <!-- Navigasi Cepat -->
+    <div class="mb-6 space-y-3">
+       <button onclick="window.location.hash='kampus?jurusan=H1'" class="w-full bg-blue-50 border border-blue-200 text-blue-700 py-3.5 rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-sm">
+         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+         Cari Rekomendasi Kampus
+       </button>
+    </div>
 
     <!-- Checklist -->
     <div class="space-y-1">

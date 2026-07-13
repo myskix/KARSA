@@ -15,7 +15,8 @@ export const navigateTo = (path) => {
 export const initRouter = (outletElement) => {
   const handleRouteChange = async () => {
     // default to #splash if no hash or first load
-    let path = window.location.hash.replace('#', '') || 'splash';
+    let fullPath = window.location.hash.replace('#', '') || 'splash';
+    let path = fullPath.split('?')[0];
     
     // Redirect splash to home if they somehow navigate to it directly
     // but typically splash auto-redirects. 
@@ -32,6 +33,8 @@ export const initRouter = (outletElement) => {
         // small delay to allow DOM to render before fade-in
         setTimeout(() => {
           outletElement.classList.remove('opacity-0');
+          window.scrollTo({ top: 0, behavior: 'instant' });
+          document.documentElement.scrollTop = 0;
           // Dispatch custom event for page loaded to bind events inside the page
           document.dispatchEvent(new CustomEvent('pageLoaded', { detail: { path } }));
         }, 50);

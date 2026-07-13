@@ -3,6 +3,7 @@ import { BottomNav } from '../components/BottomNav.js';
 import { Card } from '../components/Card.js';
 import { Button } from '../components/Button.js';
 import rulesData from '../data/potensiRules.json';
+import { evaluateCertaintyFactor } from '../services/expertSystem.js';
 
 const renderForm = () => {
   const container = document.getElementById('potensi-container');
@@ -86,23 +87,7 @@ window.submitPotensi = () => {
   
   // Simulate loading and evaluate
   setTimeout(() => {
-    let finalResult = rulesData.defaultResult;
-
-    // Evaluate rules (simple condition matching)
-    // A rule matches if all its condition keys match the user's answers
-    for (const rule of rulesData.rules) {
-      let isMatch = true;
-      for (const [key, val] of Object.entries(rule.condition)) {
-        if (answers[key] !== val) {
-          isMatch = false;
-          break;
-        }
-      }
-      if (isMatch) {
-        finalResult = rule.result;
-        break;
-      }
-    }
+    const finalResult = evaluateCertaintyFactor(answers, rulesData);
 
     // Save result to localStorage for Profile page integration
     const assessmentCount = parseInt(localStorage.getItem('karsa_assessment_count') || '0') + 1;
@@ -178,7 +163,10 @@ const renderResult = (result) => {
         `
       })}
 
-      ${Button({ text: 'Ulangi Asesmen', type: 'outline', onClick: 'window.resetPotensi()' })}
+      <div class="space-y-3">
+        ${Button({ text: 'Lihat Detail Jurusan', type: 'primary', classNames: 'shadow-md shadow-blue-500/20', onClick: `window.location.hash = 'detail-jurusan?id=${result.hypothesisId || 'H1'}'` })}
+        ${Button({ text: 'Ulangi Asesmen', type: 'outline', onClick: 'window.resetPotensi()' })}
+      </div>
     </div>
   `;
 };

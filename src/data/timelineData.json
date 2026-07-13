@@ -1,0 +1,182 @@
+[
+  {
+    "id": "T1",
+    "beasiswaId": "B1",
+    "stages": [
+      {
+        "title": "Pembuatan Akun SNPMB",
+        "date": "10 Januari - 15 Februari",
+        "status": "completed",
+        "description": "Registrasi akun wajib untuk sekolah dan siswa."
+      },
+      {
+        "title": "Pendaftaran KIP Kuliah",
+        "date": "14 Februari - 31 Oktober",
+        "status": "active",
+        "description": "Pendaftaran mandiri di web KIP Kuliah Kemdikbud."
+      },
+      {
+        "title": "Pelaksanaan SNBP / SNBT",
+        "date": "Maret - Mei",
+        "status": "upcoming",
+        "description": "Mengikuti seleksi masuk PTN jalur prestasi atau ujian."
+      },
+      {
+        "title": "Pengumuman Universitas",
+        "date": "Juli",
+        "status": "upcoming",
+        "description": "Pengumuman kelulusan dan sinkronisasi data KIP."
+      },
+      {
+        "title": "Verifikasi & Daftar Ulang",
+        "date": "Agustus",
+        "status": "upcoming",
+        "description": "Verifikasi fisik dokumen KIP oleh pihak kampus."
+      }
+    ]
+  },
+  {
+    "id": "T2",
+    "beasiswaId": "B2",
+    "stages": [
+      {
+        "title": "Sosialisasi Beasiswa",
+        "date": "Juni",
+        "status": "completed",
+        "description": "Sosialisasi oleh Pemprov Riau ke setiap universitas."
+      },
+      {
+        "title": "Pengumpulan Berkas",
+        "date": "1 - 31 Juli",
+        "status": "active",
+        "description": "Menyerahkan transkrip nilai dan KTP Riau ke BEM/Kemahasiswaan."
+      },
+      {
+        "title": "Seleksi Tingkat Provinsi",
+        "date": "Agustus - September",
+        "status": "upcoming",
+        "description": "Pemprov Riau menyeleksi kelayakan akademis pelamar."
+      },
+      {
+        "title": "Pencairan Bantuan",
+        "date": "Oktober",
+        "status": "upcoming",
+        "description": "Penyaluran dana langsung ke rekening UKT mahasiswa."
+      }
+    ]
+  },
+  {
+    "id": "T3",
+    "beasiswaId": "B3",
+    "stages": [
+      {
+        "title": "Pendataan Siswa 3T",
+        "date": "April",
+        "status": "completed",
+        "description": "Pemerintah Daerah mendata siswa berpotensi."
+      },
+      {
+        "title": "Pendaftaran Online",
+        "date": "Mei - Juni",
+        "status": "completed",
+        "description": "Pengisian formulir ADik di website resmi."
+      },
+      {
+        "title": "Pengumuman Kelulusan",
+        "date": "Juli",
+        "status": "completed",
+        "description": "Penetapan kampus tujuan pembinaan ADik."
+      },
+      {
+        "title": "Pemberangkatan",
+        "date": "Agustus",
+        "status": "completed",
+        "description": "Mahasiswa diberangkatkan ke PTN tujuan."
+      }
+    ]
+  },
+  {
+    "id": "T4",
+    "beasiswaId": "B4",
+    "stages": [
+      {
+        "title": "Pendaftaran Ujian Masuk",
+        "date": "1 Maret - 31 Mei",
+        "status": "upcoming",
+        "description": "Pendaftaran CBT online Politeknik Caltex Riau."
+      },
+      {
+        "title": "Ujian Berbasis Komputer",
+        "date": "Juni Minggu Pertama",
+        "status": "upcoming",
+        "description": "Tes akademik Matematika dan Logika Terapan."
+      },
+      {
+        "title": "Wawancara Beasiswa",
+        "date": "Juni Minggu Ketiga",
+        "status": "upcoming",
+        "description": "Wawancara kesiapan mental dan verifikasi ekonomi orang tua."
+      },
+      {
+        "title": "Pengumuman & Tanda Tangan",
+        "date": "Juli",
+        "status": "upcoming",
+        "description": "Penandatanganan kontrak beasiswa penuh."
+      }
+    ]
+  },
+  {
+    "id": "T5",
+    "beasiswaId": "B5",
+    "stages": [
+      {
+        "title": "Pendaftaran Jalur Reguler",
+        "date": "Februari - Juli",
+        "status": "active",
+        "description": "Daftar ulang online dengan melampirkan sertifikat Tahfidz/Prestasi."
+      },
+      {
+        "title": "Tes Hafalan / Verifikasi",
+        "date": "Agustus",
+        "status": "upcoming",
+        "description": "Simakan Al-Quran 3 Juz oleh tim penguji yayasan."
+      },
+      {
+        "title": "Pengumuman Subsidi",
+        "date": "September",
+        "status": "upcoming",
+        "description": "Penetapan persentase subsidi pembangunan & SPP."
+      }
+    ]
+  },
+  {
+    "id": "T6",
+    "beasiswaId": "B6",
+    "stages": [
+      {
+        "title": "Pengajuan Rekomendasi",
+        "date": "Mei",
+        "status": "completed",
+        "description": "Meminta surat rekomendasi resmi dari Pimpinan Daerah Muhammadiyah (PDM)."
+      },
+      {
+        "title": "Pendaftaran Online UMRI",
+        "date": "Juni",
+        "status": "active",
+        "description": "Mengisi form pendaftaran dan mengunggah berkas rekomendasi di web UMRI."
+      },
+      {
+        "title": "Tes Tertulis & Wawancara",
+        "date": "Juli",
+        "status": "upcoming",
+        "description": "Ujian kompetensi dasar dan wawancara Al-Islam & Kemuhammadiyahan (AIK)."
+      },
+      {
+        "title": "Pengumuman Kelulusan Beasiswa",
+        "date": "Agustus",
+        "status": "upcoming",
+        "description": "Pengumuman penerima beasiswa Persyarikatan Muhammadiyah."
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "H1": {
+    "id": "H1",
+    "nama": "Teknik Informatika / Ilmu Komputer",
+    "deskripsi": "Jurusan yang mempelajari tentang bagaimana mengimplementasikan logika ke dalam algoritma dan bahasa pemrograman untuk membangun perangkat lunak cerdas.",
+    "mataKuliahUtama": ["Algoritma & Struktur Data", "Kecerdasan Buatan (AI)", "Basis Data", "Rekayasa Perangkat Lunak"],
+    "skillDibutuhkan": ["Logika & Analisis", "Problem Solving", "Berpikir Sistematis", "Bahasa Inggris Dasar"],
+    "prospekKerja": "Sangat Tinggi di era digital, hampir seluruh industri membutuhkan digitalisasi dan otomatisasi.",
+    "contohProfesi": ["Software Engineer", "Data Scientist", "Cloud Architect", "AI Researcher"],
+    "peluangKarier": "Dapat bekerja di startup, perusahaan multinasional, BUMN, atau menjadi tech-entrepreneur."
+  },
+  "H2": {
+    "id": "H2",
+    "nama": "Ilmu Komunikasi / Kesejahteraan Sosial",
+    "deskripsi": "Fokus pada cara penyampaian pesan secara efektif dalam berbagai media dan memahami dinamika serta permasalahan sosial di masyarakat.",
+    "mataKuliahUtama": ["Psikologi Komunikasi", "Jurnalistik", "Manajemen Isu & Krisis", "Pengembangan Masyarakat"],
+    "skillDibutuhkan": ["Komunikasi Verbal & Non-verbal", "Empati", "Negosiasi", "Berpikir Kritis"],
+    "prospekKerja": "Stabil dan selalu dibutuhkan, terutama di sektor publik, media, dan humas perusahaan.",
+    "contohProfesi": ["Public Relations", "Pekerja Sosial", "Jurnalis", "Content Strategist"],
+    "peluangKarier": "Bekerja di instansi pemerintahan, NGO/LSM internasional, media massa, atau agensi kreatif."
+  },
+  "H3": {
+    "id": "H3",
+    "nama": "Desain Komunikasi Visual (DKV)",
+    "deskripsi": "Mempelajari cara menyampaikan pesan secara visual melalui seni, desain grafis, ilustrasi, hingga animasi modern.",
+    "mataKuliahUtama": ["Tipografi", "Nirmana", "Desain Identitas Merek", "Animasi & Multimedia"],
+    "skillDibutuhkan": ["Kreativitas", "Kepekaan Estetika", "Penguasaan Software Desain", "Manajemen Waktu"],
+    "prospekKerja": "Berkembang sangat pesat seiring tingginya kebutuhan konten visual di berbagai platform digital.",
+    "contohProfesi": ["Graphic Designer", "UI/UX Designer", "Art Director", "Animator"],
+    "peluangKarier": "Industri kreatif, agensi periklanan, studio animasi, atau menjadi freelance designer global."
+  },
+  "H4": {
+    "id": "H4",
+    "nama": "Manajemen Bisnis / Akuntansi",
+    "deskripsi": "Mempelajari tata kelola organisasi, strategi pemasaran, hingga analisis keuangan untuk memastikan sebuah entitas berjalan dengan efisien dan menguntungkan.",
+    "mataKuliahUtama": ["Pengantar Manajemen", "Akuntansi Keuangan", "Strategi Pemasaran", "Hukum Bisnis"],
+    "skillDibutuhkan": ["Leadership", "Ketelitian Angka", "Analisis Data Keuangan", "Pengambilan Keputusan"],
+    "prospekKerja": "Fundamental untuk segala jenis sektor bisnis. Setiap perusahaan membutuhkan pengelolaan operasional dan uang.",
+    "contohProfesi": ["Business Analyst", "Akuntan Publik", "Manajer Pemasaran", "Financial Planner"],
+    "peluangKarier": "Korporasi besar, firma akuntan, perbankan, instansi pemerintah, atau membangun startup sendiri."
+  }
+}

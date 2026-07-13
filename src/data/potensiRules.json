@@ -42,48 +42,122 @@
       ]
     }
   ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "jurusan": "Teknik Informatika / Ilmu Komputer",
+      "beasiswa": "Beasiswa Unggulan Kemdikbud / KIP Kuliah"
+    },
+    {
+      "id": "H2",
+      "jurusan": "Ilmu Komunikasi / Kesejahteraan Sosial",
+      "beasiswa": "Beasiswa ADik (Afirmasi Daerah 3T)"
+    },
+    {
+      "id": "H3",
+      "jurusan": "Desain Komunikasi Visual (DKV)",
+      "beasiswa": "KIP Kuliah Merdeka"
+    },
+    {
+      "id": "H4",
+      "jurusan": "Manajemen Bisnis / Akuntansi",
+      "beasiswa": "Beasiswa Bakti BCA / KIP Kuliah"
+    }
+  ],
   "rules": [
     {
-      "condition": { "minat": "teknologi", "bidang": "logika" },
-      "result": {
-        "jurusan": "Teknik Informatika / Ilmu Komputer",
-        "skor": 95,
-        "alasan": "Kombinasi minat kuat pada teknologi dan kemampuan logika eksakta sangat cocok untuk menjadi Software Engineer atau Data Analyst.",
-        "beasiswa": "Beasiswa Unggulan Kemdikbud / KIP Kuliah"
-      }
+      "id": "R1",
+      "conditions": [
+        { "questionId": "minat", "value": "teknologi" },
+        { "questionId": "bidang", "value": "logika" }
+      ],
+      "hypothesisId": "H1",
+      "mb": 0.8,
+      "md": 0.05,
+      "reasoning": "Kombinasi minat kuat pada teknologi dan kemampuan logika eksakta sangat cocok untuk dunia Software Engineering."
     },
     {
-      "condition": { "minat": "sosial", "aktivitas": "komunikasi" },
-      "result": {
-        "jurusan": "Ilmu Komunikasi / Kesejahteraan Sosial",
-        "skor": 92,
-        "alasan": "Kamu sangat menikmati interaksi dengan manusia. Jurusan ini akan mengasah potensimu menjadi negosiator atau pekerja sosial andal.",
-        "beasiswa": "Beasiswa ADik (Afirmasi Daerah 3T)"
-      }
+      "id": "R2",
+      "conditions": [
+        { "questionId": "nilai", "value": "saintek" },
+        { "questionId": "aktivitas", "value": "analisis" }
+      ],
+      "hypothesisId": "H1",
+      "mb": 0.7,
+      "md": 0.1,
+      "reasoning": "Penguasaan nilai SAINTEK dan kebiasaan analitis sangat mendukung cara berpikir komputasional."
     },
     {
-      "condition": { "minat": "seni", "aktivitas": "karya" },
-      "result": {
-        "jurusan": "Desain Komunikasi Visual (DKV)",
-        "skor": 88,
-        "alasan": "Imajinasi dan kreativitasmu sangat tinggi. Bidang industri kreatif saat ini sangat membutuhkan talent dengan portofolio karyamu.",
-        "beasiswa": "KIP Kuliah Merdeka"
-      }
+      "id": "R3",
+      "conditions": [
+        { "questionId": "minat", "value": "sosial" },
+        { "questionId": "aktivitas", "value": "komunikasi" }
+      ],
+      "hypothesisId": "H2",
+      "mb": 0.8,
+      "md": 0.1,
+      "reasoning": "Kamu sangat menikmati interaksi dengan manusia, ini adalah modal utama menjadi pekerja sosial atau praktisi komunikasi andal."
     },
     {
-      "condition": { "minat": "bisnis", "nilai": "soshum" },
-      "result": {
-        "jurusan": "Manajemen Bisnis / Akuntansi",
-        "skor": 90,
-        "alasan": "Pemahaman teori sosial dipadu dengan ketertarikan pada bisnis adalah fondasi kuat untuk menjadi entrepreneur muda.",
-        "beasiswa": "Beasiswa Bakti BCA / KIP Kuliah"
-      }
+      "id": "R4",
+      "conditions": [
+        { "questionId": "nilai", "value": "soshum" },
+        { "questionId": "bidang", "value": "hafalan" }
+      ],
+      "hypothesisId": "H2",
+      "mb": 0.6,
+      "md": 0.0,
+      "reasoning": "Pemahaman teori sosial yang baik sangat menunjang karir di bidang ilmu sosial."
+    },
+    {
+      "id": "R5",
+      "conditions": [
+        { "questionId": "minat", "value": "seni" },
+        { "questionId": "aktivitas", "value": "karya" }
+      ],
+      "hypothesisId": "H3",
+      "mb": 0.85,
+      "md": 0.0,
+      "reasoning": "Imajinasi dan produktivitas kreatifmu sangat tinggi untuk berkarya di industri kreatif visual."
+    },
+    {
+      "id": "R6",
+      "conditions": [
+        { "questionId": "bidang", "value": "praktek" },
+        { "questionId": "minat", "value": "seni" }
+      ],
+      "hypothesisId": "H3",
+      "mb": 0.75,
+      "md": 0.1,
+      "reasoning": "Ketertarikan pada praktik kerja nyata dan seni akan menghasilkan karya desain yang matang dan aplikatif."
+    },
+    {
+      "id": "R7",
+      "conditions": [
+        { "questionId": "minat", "value": "bisnis" },
+        { "questionId": "nilai", "value": "soshum" }
+      ],
+      "hypothesisId": "H4",
+      "mb": 0.8,
+      "md": 0.1,
+      "reasoning": "Pemahaman teori sosial dipadu dengan jiwa berbisnis adalah fondasi kokoh untuk menjadi entrepreneur muda."
+    },
+    {
+      "id": "R8",
+      "conditions": [
+        { "questionId": "aktivitas", "value": "komunikasi" },
+        { "questionId": "minat", "value": "bisnis" }
+      ],
+      "hypothesisId": "H4",
+      "mb": 0.65,
+      "md": 0.0,
+      "reasoning": "Keterampilan komunikasi yang luwes adalah kunci kesuksesan dalam negosiasi dan manajemen usaha."
     }
   ],
   "defaultResult": {
     "jurusan": "Administrasi Publik / Pendidikan",
-    "skor": 80,
-    "alasan": "Profilmu sangat seimbang dan fleksibel. Jurusan umum ini memungkinkanmu berkembang ke berbagai arah karir di masa depan.",
+    "skor": 65,
+    "alasan": "Profilmu sangat seimbang dan fleksibel. Kami menyarankan bidang umum ini karena memungkinkanmu untuk menjelajahi berbagai arah karir di masa depan. (Coba sesuaikan lagi pilihan jawabanmu agar hasil lebih akurat).",
     "beasiswa": "KIP Kuliah Reguler"
   }
 }

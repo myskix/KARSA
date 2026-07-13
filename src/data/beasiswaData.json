@@ -1,0 +1,150 @@
+[
+  {
+    "id": "B1",
+    "kampusId": "K1",
+    "nama": "KIP Kuliah Merdeka",
+    "deskripsi": "KIP Kuliah Merdeka adalah bantuan pendidikan dari pemerintah pusat untuk lulusan SMA/sederajat yang memiliki potensi akademik baik namun memiliki keterbatasan ekonomi.",
+    "persyaratan": [
+      "Siswa lulusan tahun berjalan atau maksimal lulus 2 tahun sebelumnya.",
+      "Memiliki KIP, KKS, atau terdata di DTKS Kemensos.",
+      "Lulus seleksi masuk perguruan tinggi pada program studi akreditasi Unggul, A, atau B."
+    ],
+    "benefit": [
+      "Pembebasan biaya kuliah (UKT) hingga lulus (maksimal 8 semester).",
+      "Bantuan biaya hidup sebesar Rp 1.400.000 per bulan.",
+      "Prioritas menghuni asrama kampus di tahun pertama."
+    ],
+    "dokumen": [
+      "Scan Kartu Keluarga & KTP asli",
+      "Kartu KIP/KKS atau Surat Keterangan Tidak Mampu (SKTM)",
+      "Foto rumah (tampak depan & ruang keluarga)",
+      "Bukti pembayaran rekening listrik bulan terakhir"
+    ],
+    "tips": [
+      "Pastikan NIK terdaftar dan padan di Dukcapil minimal 3 bulan sebelum mendaftar.",
+      "Unggah foto kondisi rumah yang jujur dan dapat dipertanggungjawabkan.",
+      "Pilihlah PTN/PTS yang memiliki kuota KIP Kuliah yang besar."
+    ],
+    "status": "Akan Dibuka"
+  },
+  {
+    "id": "B2",
+    "kampusId": "K1",
+    "nama": "Beasiswa Prestasi Pemprov Riau",
+    "deskripsi": "Beasiswa khusus dari Pemerintah Provinsi Riau bagi mahasiswa berprestasi asal Riau yang sedang menempuh studi sarjana baik di dalam maupun di luar provinsi.",
+    "persyaratan": [
+      "KTP dan KK asli Provinsi Riau.",
+      "Mahasiswa aktif minimal semester 3.",
+      "IPK minimal 3.50 (Eksakta) atau 3.60 (Sosial)."
+    ],
+    "benefit": [
+      "Bantuan dana pendidikan senilai maksimal Rp 5.000.000 per semester.",
+      "Jejaring ikatan mahasiswa berprestasi daerah."
+    ],
+    "dokumen": [
+      "Transkrip nilai terakhir (dilegalisir)",
+      "Surat keterangan aktif kuliah dari dekanat",
+      "Scan KTP & KK Provinsi Riau"
+    ],
+    "tips": [
+      "Keaktifan organisasi kampus atau prestasi lomba sangat menjadi nilai tambah saat seleksi berkas."
+    ],
+    "status": "Dibuka"
+  },
+  {
+    "id": "B3",
+    "kampusId": "K2",
+    "nama": "Beasiswa ADik (Afirmasi Daerah 3T)",
+    "deskripsi": "Program Afirmasi Pendidikan Tinggi (ADik) yang diselenggarakan khusus untuk siswa-siswi dari daerah Tertinggal, Terdepan, dan Terluar (3T).",
+    "persyaratan": [
+      "Siswa berasal dari wilayah 3T sesuai penetapan Peraturan Presiden.",
+      "Mendapat rekomendasi langsung dari Dinas Pendidikan Kabupaten/Kota setempat."
+    ],
+    "benefit": [
+      "Pembebasan biaya UKT secara penuh.",
+      "Bantuan biaya hidup bulanan yang disesuaikan dengan standar hidup wilayah kampus.",
+      "Program pendampingan akademik dan non-akademik di tahun pertama perkuliahan."
+    ],
+    "dokumen": [
+      "Surat Rekomendasi Resmi Dinas Pendidikan",
+      "Rapor semester 1 hingga semester 5",
+      "Sertifikat prestasi pendukung (opsional namun disarankan)"
+    ],
+    "tips": [
+      "Pilih kampus pembina ADik yang terdekat dari wilayahmu agar proses adaptasi lebih cepat."
+    ],
+    "status": "Ditutup"
+  },
+  {
+    "id": "B4",
+    "kampusId": "K4",
+    "nama": "Beasiswa YPCR Penuh",
+    "deskripsi": "Beasiswa bergengsi dari Yayasan Politeknik Caltex Riau yang diberikan kepada calon mahasiswa yang memiliki potensi cemerlang namun kurang beruntung secara finansial.",
+    "persyaratan": [
+      "Lulus seleksi ujian masuk akademik Politeknik.",
+      "Memiliki nilai rapor Matematika dan Fisika dengan rata-rata minimal 80.",
+      "Berasal dari keluarga kurang mampu secara finansial."
+    ],
+    "benefit": [
+      "Bebas 100% biaya pendaftaran ujian.",
+      "Bebas biaya SPP dan Praktikum hingga lulus tepat waktu (maksimal 8 semester).",
+      "Bantuan uang saku/subsidi bulanan."
+    ],
+    "dokumen": [
+      "Fotokopi rapor semester 1-5 terlegalisir",
+      "Surat Keterangan Tidak Mampu (SKTM) dari Kelurahan",
+      "Slip gaji orang tua atau surat pernyataan keterangan penghasilan"
+    ],
+    "tips": [
+      "Persiapkan diri dengan sangat matang untuk ujian saringan masuk (CBT) karena kuota terbatas dan persaingan ketat."
+    ],
+    "status": "Akan Dibuka"
+  },
+  {
+    "id": "B5",
+    "kampusId": "K5",
+    "nama": "Beasiswa Yayasan Pendidikan Raja Ali Haji",
+    "deskripsi": "Beasiswa yang dikelola oleh yayasan pembina UNILAK untuk mahasiswa baru yang berprestasi dalam bidang akademik maupun non-akademik (seperti Tahfidz Quran).",
+    "persyaratan": [
+      "Calon mahasiswa baru yang mendaftar melalui jalur reguler.",
+      "Memiliki hafalan Al-Quran minimal 3 Juz (untuk jalur Tahfidz) ATAU rata-rata nilai rapor >85 (untuk akademik)."
+    ],
+    "benefit": [
+      "Potongan biaya pembangunan sebesar 50% hingga 100%.",
+      "Subsidi biaya SPP pada semester 1 dan 2."
+    ],
+    "dokumen": [
+      "Sertifikat Hafalan / Syahadah dari lembaga terpercaya",
+      "Rapor sekolah",
+      "Surat kelakuan baik dari sekolah"
+    ],
+    "tips": [
+      "Sertakan semua sertifikat kejuaraan/prestasi tingkat kabupaten/provinsi untuk memaksimalkan peluang."
+    ],
+    "status": "Dibuka"
+  },
+  {
+    "id": "B6",
+    "kampusId": "K7",
+    "nama": "Beasiswa Persyarikatan Muhammadiyah",
+    "deskripsi": "Beasiswa yang ditujukan khusus bagi kader Muhammadiyah atau siswa berprestasi yang direkomendasikan oleh pimpinan daerah Muhammadiyah (PDM).",
+    "persyaratan": [
+      "Calon mahasiswa baru UMRI.",
+      "Mendapat surat rekomendasi dari PDM / PRM setempat.",
+      "Lulus tes wawasan keislaman kemuhammadiyahan."
+    ],
+    "benefit": [
+      "Pembebasan biaya SPP hingga 50% selama masa studi.",
+      "Asrama kader dan pembinaan kepemimpinan."
+    ],
+    "dokumen": [
+      "Surat Rekomendasi PDM/PRM",
+      "Fotokopi rapor semester 1-5",
+      "Sertifikat kegiatan IPM / Tapak Suci (jika ada)"
+    ],
+    "tips": [
+      "Perdalam pengetahuan dasar tentang sejarah dan tujuan Muhammadiyah sebelum wawancara."
+    ],
+    "status": "Dibuka"
+  }
+]

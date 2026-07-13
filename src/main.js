@@ -12,6 +12,11 @@ import { Peta } from './pages/Peta.js'
 import { Tentang } from './pages/Tentang.js'
 import { Profil } from './pages/Profil.js'
 import { Bagikan } from './pages/Bagikan.js'
+import { DetailJurusan } from './pages/DetailJurusan.js'
+import { Kampus } from './pages/Kampus.js'
+import { DetailKampus } from './pages/DetailKampus.js'
+import { DetailBeasiswa } from './pages/DetailBeasiswa.js'
+import { TimelineBeasiswa } from './pages/TimelineBeasiswa.js'
 
 // Register all routes
 registerRoute('splash', Splash)
@@ -22,6 +27,11 @@ registerRoute('peta', Peta)
 registerRoute('tentang', Tentang)
 registerRoute('profil', Profil)
 registerRoute('bagikan', Bagikan)
+registerRoute('detail-jurusan', DetailJurusan)
+registerRoute('kampus', Kampus)
+registerRoute('detail-kampus', DetailKampus)
+registerRoute('detail-beasiswa', DetailBeasiswa)
+registerRoute('timeline-beasiswa', TimelineBeasiswa)
 
 // Initial render with an empty layout shell
 const appContainer = document.querySelector('#app');

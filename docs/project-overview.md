@@ -1,9 +1,8 @@
 # Project Overview: KARSA
 
-**KARSA** (Konselor Karir Siswa Afirmasi) adalah sebuah purwarupa aplikasi *Digital Career Counselor* yang dikhususkan untuk siswa-siswi di daerah 3T (Tertinggal, Terdepan, dan Terluar). 
-Target utama dari proyek ini adalah **Siswa SMA Terbuka Desa Kepau Baru**.
+**KARSA** (Konselor Karir Siswa Afirmasi) adalah sebuah purwarupa aplikasi *Offline-First Progressive Web App* (*Digital Career Counselor*) yang dikhususkan untuk pendampingan karier siswa-siswi di daerah 3T (Tertinggal, Terdepan, dan Terluar). Target utama dari proyek ini adalah **Siswa SMA Terbuka Desa Kepau Baru**.
 
-Proyek ini dibangun untuk mengikuti **LIDM 2026** dan berfokus pada solusi *Offline-First* karena tantangan infrastruktur internet di daerah 3T.
+Proyek ini dibangun untuk mengikuti **LIDM 2026** dan berfokus pada solusi teknologi yang adaptif terhadap tantangan infrastruktur internet dan perangkat keras di daerah 3T.
 
 ## Latar Belakang & Masalah
 Siswa di daerah 3T seringkali mengalami:
@@ -12,13 +11,26 @@ Siswa di daerah 3T seringkali mengalami:
 3. Ketiadaan bimbingan khusus untuk persiapan beasiswa afirmasi (seperti KIP Kuliah atau Beasiswa ADik).
 
 ## Solusi yang Ditawarkan
-KARSA hadir sebagai solusi digital tanpa memerlukan koneksi internet aktif (*Offline-First*). Aplikasi ini berfungsi untuk:
-1. **Meningkatkan Motivasi:** Menyediakan cerita inspiratif dan pemahaman mengenai pentingnya pendidikan tinggi.
+KARSA hadir sebagai solusi digital interaktif yang dirancang khusus untuk memecahkan masalah tersebut. Aplikasi ini berfungsi untuk:
+1. **Meningkatkan Motivasi:** Menyediakan cerita inspiratif dan pemahaman mengenai pentingnya pendidikan tinggi melalui fitur simulasi kehidupan (*Life Simulation*).
 2. **Memberikan Rekomendasi Jurusan:** Menggunakan asesmen sederhana berbasis minat, bakat, dan kemampuan.
-3. **Membantu Persiapan Beasiswa:** Menyediakan panduan langkah demi langkah untuk mempersiapkan pendaftaran beasiswa afirmasi.
+3. **Membantu Persiapan Beasiswa:** Menyediakan panduan langkah demi langkah dan pelacakan kelengkapan berkas untuk pendaftaran beasiswa afirmasi.
 
-## Spesifikasi Purwarupa (LIDM 2026)
-- **Hanya Frontend:** Aplikasi ini tidak memiliki backend untuk memudahkan deployment sebagai aplikasi web statis / PWA.
-- **Offline-First:** Menggunakan `vite-plugin-pwa` untuk menyimpan cache file sehingga aplikasi dapat dibuka tanpa internet.
-- **Data Lokal:** Seluruh data profil, pertanyaan asesmen, dan informasi beasiswa menggunakan *local/dummy JSON*. Tidak menggunakan database eksternal.
-- **Stack Teknologi:** Vanilla JavaScript, Vite, Tailwind CSS v4, PWA Plugin.
+## Prinsip Utama Pengembangan
+Dalam mengembangkan aplikasi ini, kami berpegang pada prinsip-prinsip berikut:
+- **Offline First**: Berfungsi optimal tanpa bergantung pada konektivitas jaringan yang stabil.
+- **Mobile First**: Desain difokuskan pada kenyamanan penggunaan di perangkat layar kecil.
+- **Lightweight Application**: Ukuran aplikasi ditekan sekecil mungkin agar cepat diunduh.
+- **Fast Loading**: Optimalisasi aset dan kode untuk memastikan waktu muat (*load time*) yang sangat singkat.
+- **Modular Architecture**: Struktur kode yang terpisah dan terorganisir untuk mempermudah pengembangan lanjutan.
+- **Progressive Web App**: Kemampuan untuk diinstal langsung ke perangkat tanpa melalui toko aplikasi formal.
+- **Responsive Design**: Tampilan yang tetap elegan, rapi, dan adaptif saat dibuka dari peramban desktop maupun perangkat seluler.
+
+## Spesifikasi Target Aplikasi
+Untuk menyesuaikan dengan kondisi di lapangan, aplikasi KARSA dirancang dengan spesifikasi target teknis sebagai berikut:
+- Ukuran *bundle* produksi di bawah 5 MB.
+- Tetap dapat digunakan tanpa koneksi internet setelah instalasi pertama.
+- Seluruh data MVP (*Minimum Viable Product*) berasal dari file JSON lokal dan *Local Storage*.
+- Menggunakan JavaScript murni (Vanilla JS) dan Tailwind CSS agar ringan saat dijalankan pada perangkat spesifikasi rendah.
+- Dioptimalkan khusus untuk *smartphone* Android kelas *entry-level*.
+- Seluruh fitur inti tetap dapat digunakan secara penuh tanpa server (*backend*).
